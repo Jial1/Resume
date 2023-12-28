@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiali Liu - Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/mainpage.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="left-nav">
+                    <li><a href="/"><img src="personal.png" width="80" height="60" alt="personal"></a></li>
+                </ul>
+                <ul class="right-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+            <div class="interactive-components">
+                <button id="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+                <span id="font-size-label">Font Size:</span>
+                <input type="range" id="font-size-slider" min="10" max="30" value="16" oninput="changeFontSize(this.value)">
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container-resume">
+            <h2>My Resume</h2>
+            <img src="resume.jpg" class="resume-image" alt="Resume Preview">
+        </div>
+        <button onclick="downloadResume()" class="resumebut">Download Full Resume</button>
+        <button onclick="sendEmail()" class="resumebut">Email Me</button>
+    </div>
+    <script src="js/script.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiali Liu - Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="left-nav">
+                    <li><a href="/"><img src="personal.png" width="80" height="60" alt="personal"></a></li>
+                </ul>
+                <ul class="right-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+            <div class="interactive-components">
+                <button id="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+                <span id="font-size-label">Font Size:</span>
+                <input type="range" id="font-size-slider" min="10" max="30" value="16" oninput="changeFontSize(this.value)">
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="container1">
+            <div class="hero-content">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Passionate about creating beautiful and functional projects.</p>
+                <a href="about.html" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="about-me">
+        <div class="container2">
+            <h2>About Me</h2>
+            <p>Hey, I'm Jiali, a dedicated master's student pursuing a degree in Computer Science at Northeastern
+                University.
+                As an enthusiastic individual, I am eager to engage in research projects, collaborate with peers, and
+                actively pursue job or internship opportunities in software development.
+                My goal is to apply my skills to make a positive impact in the industry.
+                As a proactive learner, I stay current with tech trends, blending technical skills with a passion for
+                technology.
+            </p>
+        </div>
+    </div>
+    <script src="javascripts/mainpage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiali Liu - Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/project.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/mainpage.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navcontainer">
+            <nav>
+                <ul class="left-nav">
+                    <li><a href="/"><img src="personal.png" width="80" height="60" alt="personal"></a></li>
+                </ul>
+                <ul class="right-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+            <div class="interactive-components">
+                <button id="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+                <span id="font-size-label">Font Size:</span>
+                <input type="range" id="font-size-slider" min="10" max="30" value="16" oninput="changeFontSize(this.value)">
+            </div>
+        </div>
+    </header>
+
+    <section class="projects">
+        <h1>My Recent Works</h1>
+        <div class="container">
+            <div class="project-card">
+                <h2>Dvogue</h2>
+                <p>Dvogue is a clothing recommendation website that matches, searches, saves, and recommends outfits based on user input and preferences.</p>
+                <a href="https://github.com/info340a-sp22/project-IrisDin" target="_blank">GitHub Link</a>
+            </div>
+
+            <div class="project-card">
+                <h2>Vaccine-scheduler</h2>
+                <p>This project creates a scheduling system using Java for users to register, view, and select available time slots. 
+                    Utilized SQL from Java via JDBC to conduct various operations, including querying and deleting data</p>
+                <a href="https://github.com/Jial1/CSE414-vaccine-scheduler" target="_blank">GitHub Link</a>
+            </div>
+
+            <div class="project-card">
+                <h2>Rosetta</h2>
+                <p>This project is a capstone project that helps UW Office of Global Affairs (OGA) achieve up-to-date publication data. The repository is Python scripts that efficiently update the department's MySQL database using SQL and Python.</p>
+                <a href="https://github.com/Jial1/Rosetta" target="_blank">GitHub Link</a>
+            </div>
+
+            <div class="project-card">
+                <h2>SocketServer</h2>
+                <p>This project creates a serve that can handle multiple requests simultaneously and sends out the connection a short message after the connection has been established. </p>
+                <a href="https://github.com/Jial1/SocketServer" target="_blank">GitHub Link</a>
+            </div>
+
+            <div class="project-card">
+                <h2>To-do list</h2>
+                <p>This project use React to create a to-do list </p>
+                <a href="https://github.com/Jial1/todolist" target="_blank">GitHub Link</a>
+            </div>
+
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+</body>
+</html>
